@@ -1,0 +1,12 @@
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
+
+__pycache__/
+
+*.ttf
+digest.txt

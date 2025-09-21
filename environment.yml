@@ -1,0 +1,21 @@
+name: benchmark-env
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.10
+  - pytorch::pytorch>=2.5.1
+  - pytorch::torchvision>=0.20.1
+  - pytorch::torchaudio>=2.5.1
+  - pytorch::pytorch-cuda=12.1
+  - pip
+  - pip:
+    - transformers
+    - Pillow
+    - tqdm
+    - matplotlib
+    - numpy
+    - opencv-python
+    - ipywidgets
