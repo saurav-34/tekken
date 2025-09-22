@@ -4,18 +4,54 @@ channels:
   - conda-forge
   - pytorch
   - nvidia
+
 dependencies:
+  # Python Environment
   - python=3.10
+
+  # PyTorch with CUDA Support
   - pytorch::pytorch>=2.5.1
   - pytorch::torchvision>=0.20.1
   - pytorch::torchaudio>=2.5.1
   - pytorch::pytorch-cuda=12.1
+
+  # System Dependencies
   - pip
+  - git
+  - wget
+  - curl
+
+  # Development Tools
+  - jupyter
+  - notebook
+  - ipykernel
+
+  # Data Science Base
+  - numpy>=1.24.0
+  - pandas>=2.0.0
+  - matplotlib>=3.7.0
+  - scipy>=1.10.0
+
+  # Pip Dependencies
   - pip:
-    - transformers
-    - Pillow
-    - tqdm
-    - matplotlib
-    - numpy
-    - opencv-python
-    - ipywidgets
+    # Transformers and Model Dependencies
+    - transformers>=4.44.0
+    - accelerate>=0.25.0
+    - safetensors>=0.4.0
+    - huggingface_hub>=0.17.0
+    
+    # Image Processing
+    - Pillow>=10.0.0
+    - opencv-python>=4.8.0
+    
+    # Utilities
+    - tqdm>=4.65.0
+    - ipywidgets>=8.0.0
+    - psutil>=5.9.0
+    
+    # Analysis and Visualization
+    - seaborn>=0.12.0
+    - plotly>=5.15.0
+    
+    # Optional: Flash Attention (uncomment if CUDA compiler available)
+    # - flash-attn>=2.0.0

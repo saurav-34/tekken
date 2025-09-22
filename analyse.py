@@ -12,7 +12,7 @@ from pathlib import Path
 
 # --- CONFIGURATION ---
 MODEL_ID = "Qwen/Qwen2-VL-72B-Instruct"
-FRAMES_DIR = "original"  # Renamed from ORIGINAL_FRAMES_DIR
+FRAMES_DIR = "dataf/step_500/round_058_generated"  # Renamed from ORIGINAL_FRAMES_DIR
 OUTPUT_CSV = "action_sequence_analysis.csv" # New output file
 
 # Sequence and frame processing settings
@@ -25,7 +25,7 @@ OUTPUT_CSV = "action_sequence_analysis.csv" # New output file
 # - Consecutive frames (interval=1) preserve temporal continuity
 SEQUENCE_LENGTH = 8  # Increased from 3 - captures complete combos/moves (8 frames ≈ 0.27 seconds at 30fps)
 FRAME_STEP = 4       # Decreased from 10 - less overlap, more coverage (4 frames ≈ 0.13 seconds gap)
-FRAME_INTERVAL = 1   # Decreased from 4 - consecutive frames for smooth temporal flow
+FRAME_INTERVAL = 3 # Decreased from 4 - consecutive frames for smooth temporal flow
 
 EXPECTED_FPS = 30
 TOTAL_EXPECTED_FRAMES = 30 * EXPECTED_FPS

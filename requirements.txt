@@ -1,11 +1,29 @@
+# Deep Learning Framework
 torch>=2.5.1
 torchvision>=0.20.1
 torchaudio>=2.5.1
-transformers
-Pillow
-tqdm
-matplotlib
-numpy
-opencv-python
-ipywidgets
-flash-attn
+
+# Transformers and Model Dependencies
+transformers>=4.44.0
+accelerate>=0.25.0
+safetensors>=0.4.0
+
+# Image Processing
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# Data Science and Visualization
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# Utilities
+tqdm>=4.65.0
+ipywidgets>=8.0.0
+
+# Optional: Flash Attention (requires CUDA compiler)
+# flash-attn>=2.0.0
+
+# Development and Analysis
+jupyter>=1.0.0
+psutil>=5.9.0

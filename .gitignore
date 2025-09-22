@@ -1,3 +1,4 @@
+# Image files (keep only essential ones)
 *.png
 *.jpg
 *.jpeg
@@ -6,7 +7,101 @@
 *.tiff
 *.ico
 
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Model caches (optional - comment out if you want to track)
+models/
+*.bin
+*.safetensors
+*.ckpt
+*.pth
+
+# Large data files
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+temp/
+logs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Analysis outputs (comment out if you want to track results)
+results/
+output/
+*_analysis.csv
+*_results.csv
+*_benchmark.csv
+
+# Keep essential project files
+!round_004/
+!frame_action_map.json
+!p1_inputs.csv
 
 *.ttf
 digest.txt
+p1_inputs.csv
+action_sequence_analysis.csv
+sequence_benchmark.csv
+round_004
+digest.txt
+benchmark_results_local.csv
+
+# CSV files
+*.csv
